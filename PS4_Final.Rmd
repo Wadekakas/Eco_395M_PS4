@@ -134,7 +134,7 @@ qplot(scores[,1], scores[,2], color=wine$color, xlab='Component 1', ylab='Compon
 
 But it is still very hard to tell the quality of the wine from PCs.
 
-## Question 2
+
 
 ```{r PCA -4, echo=FALSE}
 # The PCA separates the color of the wine well
@@ -145,6 +145,7 @@ qplot(scores[,1], scores[,3], color=wine$quality, xlab='Component 1', ylab='Comp
 ### Conclusion
 Employing PCA could prove more effective in differentiating between red and white wines, as it eliminates the need to select specific variables to construct the map displaying the clusters. Rather, PCA enables us to use the two principal components to distinguish between the two types of wines.
 
+## Question 2
 It is worth noting, however, that neither of these unsupervised learning methods can accurately distinguish between higher and lower quality wines.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE,fig.width=18, fig.height=13}
